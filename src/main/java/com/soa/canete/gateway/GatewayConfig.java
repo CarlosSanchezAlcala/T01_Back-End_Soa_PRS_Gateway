@@ -42,6 +42,18 @@ public class GatewayConfig {
                 .route((r) -> r.path("/api/transaccionalData/**")
                         .uri("http://localhost:8088"))
 
+                .route((r) -> r.path("/api/activitiesData/**")
+                        .uri("http://localhost:8089"))
+
+                .route((r) -> r.path("/api/transactionalDataSimple/**")
+                        .uri("http://localhost:8090"))
+
+                .route((r) -> r.path("/api/attendance/**")
+                        .uri("http://localhost:8091"))
+
+                .route((r) -> r.path("/api/programs/**")
+                        .uri("http://localhost:8092"))
+
                 .build();
     }
 
